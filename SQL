@@ -105,16 +105,6 @@ INSERT INTO Result (resultID, eventName, eventDescription, usersID, organiserID)
 (2, 'Music Festival', 'Best Performance Award', 3, 2),
 (3, 'Sports Tournament', 'Championship Winner', 6, 3);
 
--- Verify all records
-SELECT * FROM roles;
-SELECT * FROM Users;
-SELECT * FROM Organiser;
-SELECT * FROM Participant;
-SELECT * FROM Events;
-SELECT * FROM Categories;
-SELECT * FROM Result;
-
-
 
 select * From roles;
 select * From Users;
