@@ -1,15 +1,16 @@
 create database PROG_Assignment
 
-create table roles(
-roleID int primary key not null ,
-role_name varchar(50),
+create table Account(
+accountID int primary key not null ,
+account_name varchar(50),
 );
+
 --user--
 create table Users (
 usersID int primary key not null,
 Email varchar(50)unique,
 userName varchar(50),
-roleID int,
+accountID int,
 foreign key (roleID)references roles(roleID)
 );
 
@@ -58,13 +59,13 @@ foreign key(organiserID)references Organiser(organiserID),
 );
 
 -- Insert roles
-INSERT INTO roles (roleID, role_name) VALUES 
+INSERT INTO Account (accountID, account_name) VALUES 
 (1, 'Admin'),
 (2, 'Organiser'),
 (3, 'Participant');
 
 -- Insert Users
-INSERT INTO Users (usersID, Email, userName, roleID) VALUES 
+INSERT INTO Users (usersID, Email, userName, accountID) VALUES 
 (1, 'john.doe@email.com', 'JohnDoe', 2),
 (2, 'jane.smith@email.com', 'JaneSmith', 3),
 (3, 'bob.wilson@email.com', 'BobWilson', 2),
@@ -106,7 +107,7 @@ INSERT INTO Result (resultID, eventName, eventDescription, usersID, organiserID)
 (3, 'Sports Tournament', 'Championship Winner', 6, 3);
 
 
-select * From roles;
+select * From account;
 select * From Users;
 select * From Organiser;
 select * From Participant;
