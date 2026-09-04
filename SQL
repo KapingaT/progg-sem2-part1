@@ -97,11 +97,12 @@ INSERT INTO Participant (participantID, participantName, usersID) VALUES
 (304, 'Alice Participant', 108),
 (305, 'Charlie Participant', 109);
 
--- Insert Events
+-- Insert Events (Starting with 401)
 INSERT INTO Events (eventID, eventName, eventDescription, usersID, organiserID) VALUES 
-(1, 'Tech Conference 2026', 'Annual technology conference', 1, 1),
-(2, 'Music Festival', 'Summer music festival', 3, 2),
-(3, 'Sports Tournament', 'Annual sports competition', 6, 3);
+(401, 'Tech Conference 2026', 'Annual technology conference', 101, 201),
+(402, 'Music Festival', 'Summer music festival', 103, 202),
+(403, 'Sports Tournament', 'Annual sports competition', 106, 203),
+(404, 'Art Exhibition', 'Modern art showcase', 107, 204);
 
 -- Insert Categories
 INSERT INTO Categories (categoriesID, categoriesName, eventID, usersID, organiserID) VALUES 
