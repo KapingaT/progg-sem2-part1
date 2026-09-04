@@ -59,9 +59,15 @@ foreign key(organiserID)references Organiser(organiserID),
 );
 
 -- Insert roles
+
+-- Insert Account records (Starting with 1)
 INSERT INTO Account (accountID, account_name) VALUES 
 (1, 'Admin'),
 (2, 'Organiser'),
+(3, 'Participant'),
+(4, 'Manager'),
+(5, 'Coordinator'),
+(6, 'Volunteer');,
 
 
 -- Insert Users
