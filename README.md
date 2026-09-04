@@ -20,14 +20,17 @@ Organisers can:
 ### Participant
 
 Participants can:
-
-
-##  YOUTUBE 
-https://youtu.be/vKnC-0pmj7Y
-
-
 * Browse available events.
 * Select event categories.
 * Enrol in events.
 * Track and view their personal results.
+
+
+
+
+##  YOUTUBE 
+https://youtu.be/vKnC-0pmj7Y
+https://youtu.be/T8FbvwMVK0A
+
+
 
