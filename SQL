@@ -62,7 +62,7 @@ foreign key(organiserID)references Organiser(organiserID),
 INSERT INTO Account (accountID, account_name) VALUES 
 (1, 'Admin'),
 (2, 'Organiser'),
-(3, 'Participant');
+
 
 -- Insert Users
 INSERT INTO Users (usersID, Email, userName, accountID) VALUES 
