@@ -57,6 +57,63 @@ foreign key(usersID)references Users(usersID),
 foreign key(organiserID)references Organiser(organiserID),
 );
 
+-- Insert roles
+INSERT INTO roles (roleID, role_name) VALUES 
+(1, 'Admin'),
+(2, 'Organiser'),
+(3, 'Participant');
+
+-- Insert Users
+INSERT INTO Users (usersID, Email, userName, roleID) VALUES 
+(1, 'john.doe@email.com', 'JohnDoe', 2),
+(2, 'jane.smith@email.com', 'JaneSmith', 3),
+(3, 'bob.wilson@email.com', 'BobWilson', 2),
+(4, 'alice.brown@email.com', 'AliceBrown', 3),
+(5, 'charlie.davis@email.com', 'CharlieDavis', 3),
+(6, 'diana.miller@email.com', 'DianaMiller', 2);
+
+-- Insert Organisers
+INSERT INTO Organiser (organiserID, organiserNumber, usersID) VALUES 
+(1, 1001, 1),
+(2, 1002, 3),
+(3, 1003, 6);
+
+-- Insert Participants
+INSERT INTO Participant (participantID, participantName, usersID) VALUES 
+(1, 'John Participant', 2),
+(2, 'Jane Participant', 4),
+(3, 'Bob Participant', 5);
+
+-- Insert Events
+INSERT INTO Events (eventID, eventName, eventDescription, usersID, organiserID) VALUES 
+(1, 'Tech Conference 2026', 'Annual technology conference', 1, 1),
+(2, 'Music Festival', 'Summer music festival', 3, 2),
+(3, 'Sports Tournament', 'Annual sports competition', 6, 3);
+
+-- Insert Categories
+INSERT INTO Categories (categoriesID, categoriesName, eventID, usersID, organiserID) VALUES 
+(1, 'Technology', 1, 1, 1),
+(2, 'Music', 2, 3, 2),
+(3, 'Sports', 3, 6, 3),
+(4, 'Workshop', 1, 1, 1),
+(5, 'Main Stage', 2, 3, 2),
+(6, 'Team Sports', 3, 6, 3);
+
+-- Insert Results
+INSERT INTO Result (resultID, eventName, eventDescription, usersID, organiserID) VALUES 
+(1, 'Tech Conference 2026', 'Best Innovation Award', 1, 1),
+(2, 'Music Festival', 'Best Performance Award', 3, 2),
+(3, 'Sports Tournament', 'Championship Winner', 6, 3);
+
+-- Verify all records
+SELECT * FROM roles;
+SELECT * FROM Users;
+SELECT * FROM Organiser;
+SELECT * FROM Participant;
+SELECT * FROM Events;
+SELECT * FROM Categories;
+SELECT * FROM Result;
+
 
 
 select * From roles;
