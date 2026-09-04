@@ -26,6 +26,8 @@ Participants can:
 * Track and view their personal results.
 
 
+## ERD DIAGRAM
+<img width="919" height="496" alt="image" src="https://github.com/user-attachments/assets/182df2ad-3bea-4050-ab54-bbaa07a85b82" />
 
 
 ##  YOUTUBE 
