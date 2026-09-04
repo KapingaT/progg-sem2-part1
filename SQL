@@ -20,7 +20,7 @@ organiserNumber int ,
 usersID int,
 foreign key (usersID)references Users(usersID)
 );
-
+--participants--
 create table Participant(
 participantID int primary key not null ,
 participantName varchar(50) ,
