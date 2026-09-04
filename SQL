@@ -115,12 +115,12 @@ INSERT INTO Categories (categoriesID, categoriesName, eventID, usersID, organise
 (507, 'Paintings', 404, 107, 204),
 (508, 'Sculptures', 404, 107, 204);
 
--- Insert Results
+-- Insert Results (Starting with 601)
 INSERT INTO Result (resultID, eventName, eventDescription, usersID, organiserID) VALUES 
-(1, 'Tech Conference 2026', 'Best Innovation Award', 1, 1),
-(2, 'Music Festival', 'Best Performance Award', 3, 2),
-(3, 'Sports Tournament', 'Championship Winner', 6, 3);
-
+(601, 'Tech Conference 2026', 'Best Innovation Award', 101, 201),
+(602, 'Music Festival', 'Best Performance Award', 103, 202),
+(603, 'Sports Tournament', 'Championship Winner', 106, 203),
+(604, 'Art Exhibition', 'Best Artist Award', 107, 204);
 
 select * From account;
 select * From Users;
