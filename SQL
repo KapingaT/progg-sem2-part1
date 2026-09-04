@@ -1,0 +1,68 @@
+create database PROG_Assignment
+
+create table roles(
+roleID int primary key not null ,
+role_name varchar(50),
+);
+--user--
+create table Users (
+usersID int primary key not null,
+Email varchar(50)unique,
+userName varchar(50),
+roleID int,
+foreign key (roleID)references roles(roleID)
+);
+
+create table Organiser(
+organiserID int primary key ,
+organiserNumber int ,
+usersID int,
+foreign key (usersID)references Users(usersID)
+);
+
+create table Participant(
+participantID int primary key not null ,
+participantName varchar(50) ,
+usersID int,
+foreign key(usersID)references Users(usersID)
+);
+
+create table Events(
+eventID int primary key not null ,
+eventName varchar(50),
+eventDescription varchar(50),
+usersID int,
+organiserID int,
+foreign key(usersID)references Users(usersID),
+foreign key(organiserID)references Organiser(organiserID),
+);
+
+create table Categories(
+categoriesID int primary key not null ,
+categoriesName varchar(50),
+eventID int,
+usersID int,
+organiserID int,
+foreign key(usersID)references Users(usersID),
+foreign key(organiserID)references Organiser(organiserID),
+);
+
+create table Result(
+resultID int primary key not null ,
+eventName varchar(50),
+eventDescription varchar(50),
+usersID int,
+organiserID int,
+foreign key(usersID)references Users(usersID),
+foreign key(organiserID)references Organiser(organiserID),
+);
+
+
+
+select * From roles;
+select * From Users;
+select * From Organiser;
+select * From Participant;
+select * From Events;
+select * From Categories;
+select * From Result;
