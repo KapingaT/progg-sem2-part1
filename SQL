@@ -5,13 +5,13 @@ accountID int primary key not null ,
 account_name varchar(50),
 );
 
---user--
+--User--
 create table Users (
 usersID int primary key not null,
 Email varchar(50)unique,
 userName varchar(50),
 accountID int,
-foreign key (roleID)references roles(roleID)
+foreign key (accountID)references Account(accountID)
 );
 
 create table Organiser(
