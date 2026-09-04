@@ -104,14 +104,16 @@ INSERT INTO Events (eventID, eventName, eventDescription, usersID, organiserID) 
 (403, 'Sports Tournament', 'Annual sports competition', 106, 203),
 (404, 'Art Exhibition', 'Modern art showcase', 107, 204);
 
--- Insert Categories
+-- Insert Categories (Starting with 501)
 INSERT INTO Categories (categoriesID, categoriesName, eventID, usersID, organiserID) VALUES 
-(1, 'Technology', 1, 1, 1),
-(2, 'Music', 2, 3, 2),
-(3, 'Sports', 3, 6, 3),
-(4, 'Workshop', 1, 1, 1),
-(5, 'Main Stage', 2, 3, 2),
-(6, 'Team Sports', 3, 6, 3);
+(501, 'Technology', 401, 101, 201),
+(502, 'Music', 402, 103, 202),
+(503, 'Sports', 403, 106, 203),
+(504, 'Workshop', 401, 101, 201),
+(505, 'Main Stage', 402, 103, 202),
+(506, 'Team Sports', 403, 106, 203),
+(507, 'Paintings', 404, 107, 204),
+(508, 'Sculptures', 404, 107, 204);
 
 -- Insert Results
 INSERT INTO Result (resultID, eventName, eventDescription, usersID, organiserID) VALUES 
