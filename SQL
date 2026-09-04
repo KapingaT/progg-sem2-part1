@@ -89,11 +89,13 @@ INSERT INTO Organiser (organiserID, organiserNumber, usersID) VALUES
 (203, 10213, 106),
 (204, 10214, 107);
 
--- Insert Participants
+-- Insert Participants (Starting with 301)
 INSERT INTO Participant (participantID, participantName, usersID) VALUES 
-(1, 'John Participant', 2),
-(2, 'Jane Participant', 4),
-(3, 'Bob Participant', 5);
+(301, 'John Participant', 102),
+(302, 'Jane Participant', 104),
+(303, 'Bob Participant', 105),
+(304, 'Alice Participant', 108),
+(305, 'Charlie Participant', 109);
 
 -- Insert Events
 INSERT INTO Events (eventID, eventName, eventDescription, usersID, organiserID) VALUES 
