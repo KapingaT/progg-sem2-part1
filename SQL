@@ -70,14 +70,17 @@ INSERT INTO Account (accountID, account_name) VALUES
 (6, 'Volunteer');,
 
 
--- Insert Users
+-- Insert Users (Starting with 101)
 INSERT INTO Users (usersID, Email, userName, accountID) VALUES 
-(1, 'john.doe@email.com', 'JohnDoe', 2),
-(2, 'jane.smith@email.com', 'JaneSmith', 3),
-(3, 'bob.wilson@email.com', 'BobWilson', 2),
-(4, 'alice.brown@email.com', 'AliceBrown', 3),
-(5, 'charlie.davis@email.com', 'CharlieDavis', 3),
-(6, 'diana.miller@email.com', 'DianaMiller', 2);
+(101, 'john.doe@email.com', 'JohnDoe', 2),
+(102, 'jane.smith@email.com', 'JaneSmith', 3),
+(103, 'bob.wilson@email.com', 'BobWilson', 2),
+(104, 'alice.brown@email.com', 'AliceBrown', 3),
+(105, 'charlie.davis@email.com', 'CharlieDavis', 3),
+(106, 'diana.miller@email.com', 'DianaMiller', 2),
+(107, 'eva.green@email.com', 'EvaGreen', 4),
+(108, 'frank.white@email.com', 'FrankWhite', 5),
+(109, 'grace.black@email.com', 'GraceBlack', 6);
 
 -- Insert Organisers
 INSERT INTO Organiser (organiserID, organiserNumber, usersID) VALUES 
